@@ -1,6 +1,28 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "jsx": "react-jsx",
+    "strict": true,
+    "module": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "src",
+    "paths": {
+      "@src/*": [
+        "src/*"
+      ],
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "types": [
+    "@types/styled-components",
+    "@types/styled-components-react-native",
+    "@types/jest",
+    "@types/node",
+    "@types/react",
+    "@types/react-dom",
+    "@types/react-native",
+    "@types/react-redux",
+  ]
 }
